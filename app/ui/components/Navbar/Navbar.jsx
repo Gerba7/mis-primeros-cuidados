@@ -49,7 +49,14 @@ const Navbar = () => {
           <div className={styles.burger} onClick={toggleMenu}>
             <div className={styles.menuItem} style={{ color: navHeight && '#788586' }}>
               {displayMenu ? (
-                <MenuIcon color='inherit' style={{ fontSize: 'inherit' }} />
+                <>
+                  {/* <MenuIcon color='inherit' style={{ fontSize: 'inherit' }} /> */}
+                  <div className={styles.menuIcon}>
+                    <hr className={styles.hr} style={{ backgroundColor: '#d1bca2' }} />
+                    <hr className={styles.hr} style={{ backgroundColor: '#9f7920' }} />
+                    <hr className={styles.hr} style={{ backgroundColor: '#748b71' }} />
+                  </div>
+                </>
               ) : (
                 <CloseIcon color='inherit' style={{ fontSize: 'inherit' }} />
               )}
@@ -68,13 +75,13 @@ const Navbar = () => {
           </Link>
         </div>
         <div className={`${styles.right} ${displayMenu ? styles.rightDisplay : ''}`}>
-          <div>
+          <div className={` ${styles.right} ${displayMenu ? styles.rightLinks : ''}`}>
             <Link href='#quienes-somos' className={`${styles.link} ${navHeight ? styles.linkColor : ''}`}>QUIÉNES SOMOS</Link>
             <Link href='#servicios' className={`${styles.link} ${navHeight ? styles.linkColor : ''}`}>SERVICIOS</Link>
             <Link href='#experiencia' className={`${styles.link} ${navHeight ? styles.linkColor : ''}`}>EXPERIENCIA</Link>
-            <Link href='#contacto' className={`${styles.link} ${styles.blankRight}`}>CONTACTO</Link>
+            <Link href='#contacto' className={`${styles.link}  ${navHeight ? styles.linkColor : ''}`}>CONTACTO</Link>
           </div>
-          <div>
+          <div className={`${styles.linkButtonContainer}`}>
             <Link href='#postulate' className={`${styles.link} ${styles.linkButton} ${navHeight ? styles.linkColor : ''}`}>POSTULATE</Link>
           </div>
         </div>

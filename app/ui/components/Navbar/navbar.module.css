@@ -57,6 +57,22 @@
     display: flex;
 }
 
+.menuIcon {
+    width: 20px;
+    height: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.hr {
+    width: 100%;
+    border: none;
+    height: 2.2px; 
+}
+
 .menuItem:hover {
     scale: 1.25;
 }
@@ -185,7 +201,7 @@
         height: 100vh;
         width: 100vw;
         flex-direction: column;
-        background: #000000d0;
+        background: #748b71cf;
         align-items: center;
         justify-content: center;
         transition: 0.5s all ease;
@@ -205,6 +221,14 @@
         font-size: 16px;
         font-weight: 400;
         border-right: none;
+    }
+
+    .linkButtonContainer {
+        margin-top: 70vh;
+    }
+
+    .linkButton {
+        padding: 2vh 3vw;
     }
 
 }

@@ -27,6 +27,29 @@
     gap: 5vh;
 }
 
+@keyframes visibleAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.title {
+    font-size: var(--superTitle);
+    font-weight: 900;
+    animation-delay: .3s;
+    opacity: 1;
+    color: var(--text);
+    font-size: var(--superTitle);
+    align-self: center;
+}
+
+.visible {
+    animation: visibleAnimation 1s ease-in-out forwards;
+}
+
 .content {
     display: flex;
     width: 100%;
@@ -36,7 +59,7 @@
     flex: 1;
     width: 100%;
     background-color: var(--bgWhite);
-    border-radius: 10vh;
+    border-radius: 5vh;
     box-shadow: 3px 5px 15px -3px rgba(151, 119, 80, 0.2);
 }
 
@@ -45,7 +68,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 3vh;
+    margin: 5vh;
     gap: 5vh;
 }
 
@@ -91,7 +114,40 @@
 
 @media  (max-width: 799px) {
 
-    
+    .container {
+        padding: 10vh 0vw 5vh 0vw;
+    }
+
+    .content {
+        position: relative;
+    }
+
+    .title {
+        font-size: var(--superTitleMobile);
+    }
+
+    .right {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .left {
+        z-index: 3;
+        margin: 10vh 5vw 10vh 5vw;
+        height: max-content;
+    }
+
+    .leftContent {
+        gap: 2vh;
+    }
+
+    .img {
+        height: 100%;
+        object-fit: cover;
+        scale: 1.15;
+    }
 
 }
 

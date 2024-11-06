@@ -32,6 +32,10 @@
     color: var(--textBright);
   }
 
+  .backMobile {
+    display: none;
+  }
+
   .img {
     width: 100%;
     height: 100%;
@@ -89,6 +93,14 @@
   }
 
   @media (max-width: 799px) {
+
+    .back {
+      display: none;
+    }
+
+    .backMobile {
+      display: flex;
+    }
 
     .link {
       bottom: 120px;

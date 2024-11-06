@@ -152,3 +152,39 @@
 .comments {
     font-size: 12px;
 }
+
+
+
+@media  (max-width: 799px) {
+
+    
+    .card {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: var(--paragraphMobile);
+    }
+
+}
+
+
+@media (min-width: 800px) and (max-width: 999px) {
+
+    
+
+}
+
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+
+    
+}
+
+
+@media (min-width: 1200px) and (max-width: 1499px) {
+
+    
+
+}

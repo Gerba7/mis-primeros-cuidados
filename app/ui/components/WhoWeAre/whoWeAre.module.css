@@ -106,6 +106,29 @@
 
 @media  (max-width: 799px) {
 
+    .container {
+        padding: 10vh 5vw 0 5vw;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        gap: 5vh;
+    }
+
+    .title {
+        font-size: var(--superTitleMobile);
+    }
+
+    .text {
+        font-size: var(--paragraphMobile);
+    }
+
+    .subtitle {
+        font-size: var(--titleMobile);
+    }
     
 
 }
