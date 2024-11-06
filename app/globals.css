@@ -1,27 +1,33 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  --text: #222222;
+  --bg: #F5F3EE;
+  --bgWhite: #fbf9fa;
+  --main: #9f7920;
+  --secondary: #977750;
+  --terciary: #d1bca2;
+  --fourth: #748b71;
+  
+  --shadow: 3px 5px 15px -3px rgba(0,0,0,0.2);
+  --colorShadow: 0px 0px 8px 2px #97775058;
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+  --superTitle: 3vw;
+  --title: 2vw;
+  --title2: 1.2vw;
+  --paragraph: 1vw;
+  --topTitle: .8vw; 
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --superTitleMobile: 6.8vw;
+  --titleMobile: 6vw;
+  --title2Mobile: 4.8vw;
+  --paragraphMobile: 3vw;
+  --topTitleMobile: .8vw; 
+  
+  --paragraphLine: 4vh;
+  --paragraphLine2: 3vh;
+  --paragraphLine3: 2vh;
+  
+
 }
 
 * {
@@ -30,13 +36,18 @@ body {
   margin: 0;
 }
 
+html,
+body {
+  scroll-behavior: smooth !important;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+
+}
+
 a {
   color: inherit;
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
