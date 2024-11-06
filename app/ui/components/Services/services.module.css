@@ -55,6 +55,13 @@
 
 @media  (max-width: 799px) {
 
+    .container {
+        padding: 10vh 5vw 0 5vw;
+    }
+
+    .title {
+        font-size: var(--superTitleMobile);
+    }
     
 
 }

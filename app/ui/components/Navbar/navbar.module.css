@@ -208,10 +208,12 @@
         right: 0;
         margin-right: 0px;
         gap: 10vh;
+        z-index: 5;
     }
 
     .rightDisplay {
         right: 100vw;
+        z-index: 10;
     }
 
     .link {
@@ -221,14 +223,17 @@
         font-size: 16px;
         font-weight: 400;
         border-right: none;
+        z-index: 10;
     }
 
     .linkButtonContainer {
         margin-top: 70vh;
+        z-index: 10;
     }
 
     .linkButton {
         padding: 2vh 3vw;
+        z-index: 10;
     }
 
 }
