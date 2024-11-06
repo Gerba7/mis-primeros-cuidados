@@ -107,7 +107,7 @@
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    background: #232a34;
+    background-color: var(--bgWhite);
     border-radius: 16px 16px 0px 0px;
 }
 

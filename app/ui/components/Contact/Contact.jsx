@@ -1,6 +1,5 @@
 'use client'
 
-import useAnimateOnScroll from '@/app/hooks/useAnimateOnScroll';
 import styles from './contact.module.css';
 import { titan } from '@/app/page';
 import Image from 'next/image';
@@ -10,8 +9,6 @@ import Form from './Form/Form';
 
 const Contact = () => {
 
-    const titleAnimation = useAnimateOnScroll();
-
 
   return (
     <div className={styles.container}>
@@ -20,7 +17,7 @@ const Contact = () => {
             <div className={styles.content}>
                 <div className={styles.left}>
                   <div className={styles.leftContent}>
-                    <h1 className={`${titan.className} ${styles.title} ${titleAnimation ? styles.visible : ''}`} ref={titleAnimation.ref}>
+                    <h1 className={`${titan.className} ${styles.title}`}>
                         Contacto
                     </h1>
                     <Form />

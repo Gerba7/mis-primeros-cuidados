@@ -1,6 +1,6 @@
 'use client'
 
-import useAnimateOnScroll from '@/app/hooks/useAnimateOnScroll';
+
 import styles from './whoWeAre.module.css';
 import { titan } from '@/app/page';
 import Image from 'next/image';
@@ -10,16 +10,11 @@ import Gabriela_Rojas from '../../../../public/images/whoWeAre.png';
 
 const WhoWeAre = () => {
 
-    const titleAnimation = useAnimateOnScroll();
-
 
   return (
     <div className={styles.container}>
         <div className={styles.scrollOffset} id='quienes-somos'></div>
         <div className={styles.wrapper}>
-            {/* <h1 className={`${titan.className} ${styles.title} ${titleAnimation ? styles.visible : ''}`} ref={titleAnimation.ref}>
-                Quiénes Somos
-            </h1> */}
             <div className={styles.content}>
                 <div className={styles.left}>
                     <Image className={styles.img} src={Gabriela_Rojas} alt='Gabriela Rojas' /> 

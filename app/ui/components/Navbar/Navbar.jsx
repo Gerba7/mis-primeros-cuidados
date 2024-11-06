@@ -4,7 +4,6 @@ import { useEffect, useState, useCallback } from 'react';
 import styles from './navbar.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { usePathname } from 'next/navigation';
 import Primeros_Cuidados_Logo from '../../../../public/images/Primeros_Cuidados_Logo.png';
