@@ -203,12 +203,13 @@
         flex-direction: column;
         background: #748b71cf;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         transition: 0.5s all ease;
         right: 0;
         margin-right: 0px;
         gap: 10vh;
         z-index: 5;
+        padding-top: 20vh;
     }
 
     .rightDisplay {
@@ -227,7 +228,7 @@
     }
 
     .linkButtonContainer {
-        margin-top: 70vh;
+        margin-top: 60vh;
         z-index: 10;
     }
 
