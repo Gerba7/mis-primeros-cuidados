@@ -58,7 +58,7 @@ const Navbar = () => {
                   </div>
                 </>
               ) : (
-                <CloseIcon color='inherit' style={{ fontSize: 'inherit' }} />
+                <CloseIcon color='inherit' style={{ fontSize: 'inherit', zIndex: 20, color: '#d1bca2' }} />
               )}
             </div>
           </div>
@@ -75,7 +75,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className={`${styles.right} ${displayMenu ? styles.rightDisplay : ''}`}>
-          <div className={` ${styles.right} ${displayMenu ? styles.rightLinks : ''}`}>
+          <div className={`${displayMenu ? '' : styles.rightLinks}`}>
             <Link href='#quienes-somos' className={`${styles.link} ${navHeight ? styles.linkColor : ''}`}>QUIÉNES SOMOS</Link>
             <Link href='#servicios' className={`${styles.link} ${navHeight ? styles.linkColor : ''}`}>SERVICIOS</Link>
             <Link href='#experiencia' className={`${styles.link} ${navHeight ? styles.linkColor : ''}`}>EXPERIENCIA</Link>
