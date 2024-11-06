@@ -1,10 +1,10 @@
 'use client'
 
 import styles from './contact.module.css';
-import { titan } from '@/app/page';
 import Image from 'next/image';
 import Items from '../../../../public/images/contactCoverItems.png';
 import Form from './Form/Form';
+import { titan } from '@/app/layout';
 
 
 const Contact = () => {

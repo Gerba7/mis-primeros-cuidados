@@ -1,7 +1,7 @@
-'use client'
 
+
+import { titan } from '@/app/layout';
 import styles from './services.module.css';
-import { titan } from '@/app/page';
 import Slider2 from './Slider2/Slider2';
 
 

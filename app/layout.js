@@ -1,9 +1,11 @@
 import "./globals.css";
 import Navbar from "./ui/components/Navbar/Navbar";
-import { Lato, Poppins } from "next/font/google";
+import { Titan_One, Poppins } from "next/font/google";
 
 
 const poppins = Poppins({ subsets: ["latin"], display: 'swap', weight: ['100', '300', '400', '700', '900'], });
+export const titan = Titan_One({ subsets: ["latin"], display: 'swap', weight: ['400']});
+
 
 export const metadata = {
   title: "Mis Primeros Cuidados",

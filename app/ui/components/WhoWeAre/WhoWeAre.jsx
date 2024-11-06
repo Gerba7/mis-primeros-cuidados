@@ -2,9 +2,9 @@
 
 
 import styles from './whoWeAre.module.css';
-import { titan } from '@/app/page';
 import Image from 'next/image';
 import Gabriela_Rojas from '../../../../public/images/whoWeAre.png';
+import { titan } from '@/app/layout';
 
 
 
