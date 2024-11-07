@@ -11,7 +11,7 @@ const Experience = () => {
 
   return (
     <div className={styles.container}>
-        <div className={styles.scrollOffset} id='servicios'></div>
+        <div className={styles.scrollOffset} id='experiencia'></div>
         <div className={styles.wrapper}>
             <h1 className={`${titan.className} ${styles.title} `}>
                 Experiencia
