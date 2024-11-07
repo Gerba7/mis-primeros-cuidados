@@ -12,6 +12,9 @@ const Contact = () => {
   return (
     <div className={styles.container}>
         <div className={styles.scrollOffset} id='contacto'></div>
+        <div className={styles.right}>
+            <Image className={styles.img} src={Items} alt='items' />
+        </div>
         <div className={styles.wrapper}>
             <div className={styles.content}>
                 <div className={styles.left}>
@@ -22,9 +25,7 @@ const Contact = () => {
                     <Form />
                   </div>
                 </div>
-                <div className={styles.right}>
-                    <Image className={styles.img} src={Items} alt='items' />
-                </div>
+                <div className={styles.flex}></div>
             </div>
         </div>
     </div>

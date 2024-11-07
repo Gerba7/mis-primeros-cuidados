@@ -81,7 +81,7 @@ const Navbar = () => {
             <Link href='#contacto' className={`${styles.link}  ${navHeight ? styles.linkColor : ''}`}>CONTACTO</Link>
           </div>
           <div className={`${styles.linkButtonContainer}`}>
-            <Link href='#postulate' className={`${styles.link} ${styles.linkButton} ${navHeight ? styles.linkColor : ''}`}>POSTULATE</Link>
+            <a href='https://docs.google.com/forms/d/e/1FAIpQLSczLIuxRP4AH-LnMH1TGilUNqkI1OjrQBg7RMlSkoWgHMw_PQ/viewform' rel="noopener noreferrer" target="_blank" className={`${styles.link} ${styles.linkButton} ${navHeight ? styles.linkColor : ''}`}>POSTULATE</a>
           </div>
         </div>
       </div>

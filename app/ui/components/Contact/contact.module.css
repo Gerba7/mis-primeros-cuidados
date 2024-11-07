@@ -97,7 +97,13 @@
 
 .right {
     flex: 1;
-    width: 100%;
+    width: 50%;
+    position: absolute;
+    right: -4%;
+}
+
+.flex {
+    flex: 1;
 }
 
 .img {
@@ -132,6 +138,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        width: 100%;
     }
 
     .left {
@@ -148,6 +155,13 @@
         height: 100%;
         object-fit: cover;
         scale: 1.15;
+    }
+
+    .flex {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
 }
