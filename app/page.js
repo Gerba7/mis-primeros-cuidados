@@ -14,6 +14,7 @@ export default function Home() {
       <Cover />
       <WhoWeAre />
       <Services />
+      <Contact />
     </main>
   );
 }
