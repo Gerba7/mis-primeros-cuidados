@@ -9,6 +9,7 @@
     position: relative;
     background-color: var(--bg);
     gap: 10vh;
+    overflow: hidden;
 }
 
 .scrollOffset {
@@ -102,7 +103,7 @@
 .img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 

@@ -5,7 +5,7 @@ import styles from './form.module.css';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { clientSchema } from '@/app/lib/zod';
-// import { submitForm } from '@/app/lib/actions';
+import { submitForm } from '@/app/lib/actions';
 
 
 const Form = () => {
@@ -16,7 +16,7 @@ const Form = () => {
 
     const onSubmit = async (data) => {
         try {
-            // await submitForm(data);
+            await submitForm(data);
             return setSent(true);
         } catch (error) {
             console.error("Form submission failed:", error);
