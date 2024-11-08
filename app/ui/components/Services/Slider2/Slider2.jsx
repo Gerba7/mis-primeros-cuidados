@@ -18,7 +18,7 @@ const Slider2 = () => {
     const data = [
         {
              _id: 0, 
-            name: 'Enfoque en crianza respetada y sin violencia, priorizando el bienestar psicológico de los niños mediante acciones basadas en el respeto.', 
+            name: 'Personal idóneo, dónde se trata una crianza libre de violencia, a partir de la interacción con el niños desde el respeto, promoviendo no solo aprendizajes necesarios sino el bienestar psicológico de los niños.', 
             src: Servicio1 
         },
         { 
@@ -68,7 +68,7 @@ const Slider2 = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setSlideIndex((prevIndex) => (prevIndex < length - 1 ? prevIndex + 1 : 0));
-        }, 2000);
+        }, 3000);
         return () => clearInterval(interval);
     }, [length]);
 

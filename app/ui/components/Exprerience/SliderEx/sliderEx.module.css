@@ -8,7 +8,7 @@
 
 .waveUp {
     position: absolute;
-    top: -20vh;
+    top: -19vh;
     left: 0;
     width: 100%;
 }
@@ -83,6 +83,10 @@
 .right {
     right: 47%;
     transform: translate(50%, 50%);
+}
+
+.opacity {
+    opacity: 0.4;
 }
 
 .row {
@@ -174,10 +178,11 @@
     flex-direction: column;
     padding: 8px;
     justify-content: space-between;
+    padding-top: 4vh;
 }
 
 .top {
-    height: 20%;
+    height: 25%;
     display: flex;
     flex-direction: column;
     gap: 1vh;
@@ -193,8 +198,10 @@
 }
 
 .center {
-    height: 70%;
+    height: 60%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .description {
@@ -206,7 +213,7 @@
     overflow: hidden; /* Oculta el contenido que excede el contenedor */
     text-overflow: ellipsis; /* Muestra '...' si el texto es demasiado largo */
     display: -webkit-box; /* Para que funcione en varios navegadores */
-    -webkit-line-clamp: 7; /* Limita el texto a 3 líneas, ajusta el número según sea necesario */
+    -webkit-line-clamp: 6; /* Limita el texto a 3 líneas, ajusta el número según sea necesario */
     -webkit-box-orient: vertical;
 }
 
@@ -224,7 +231,7 @@
 }
 
 .bottom {
-    height: 10%;
+    height: 15%;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;

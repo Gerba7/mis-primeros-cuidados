@@ -85,29 +85,37 @@ const SliderEx = () => {
     return (
         <div className={styles.container}>
             <div className={styles.waveUp}>
-                <Image className={styles.img} src={Wave} />
+                <Image className={styles.img} src={Wave} alt='wave decoration' />
             </div>
             <div className={`${styles.waveUp} ${styles.waveUp2}`}>
-                <Image className={styles.img} src={Wave} />
+                <Image className={styles.img} src={Wave} alt='wave decoration' />
             </div>
             <div className={`${styles.waveUp} ${styles.waveUp3}`}>
-                <Image className={styles.img} src={Wave} />
+                <Image className={styles.img} src={Wave} alt='wave decoration' />
             </div>
             <div className={styles.waveDown}>
-                <Image className={styles.img} src={Wave2} />
+                <Image className={styles.img} src={Wave2} alt='wave decoration' />
             </div>
             <div className={`${styles.waveDown} ${styles.waveDown2}`}>
-                <Image className={styles.img} src={Wave2} />
+                <Image className={styles.img} src={Wave2} alt='wave decoration' />
             </div>
             <div className={`${styles.waveDown} ${styles.waveDown3}`}>
-                <Image className={styles.img} src={Wave2} />
+                <Image className={styles.img} src={Wave2} alt='wave decoration' />
             </div>
             <div className={styles.wrapper}>
-                {slideIndex > 0 && (
-                    <div className={`${styles.arrow} ${styles.left}`} onClick={() => handleClick("left")}>
-                        <KeyboardArrowLeftIcon />
-                    </div>
-                )}
+                {slideIndex > 0 ? 
+                    (
+                        <div className={`${styles.arrow} ${styles.left}`} onClick={() => handleClick("left")}>
+                            <KeyboardArrowLeftIcon />
+                        </div>
+                    )
+                    :
+                    (
+                        <div className={`${styles.arrow} ${styles.left} ${styles.opacity}`}>
+                            <KeyboardArrowLeftIcon />
+                        </div>
+                    )
+                }
                 <div className={styles.row}>
                     {data.map((ac, index) => {
                         
@@ -122,9 +130,9 @@ const SliderEx = () => {
                         } 
 
                         return(
-                            <div key={index} className={styles.card} style={{ transform: `translate(-${slideIndex * 100}%)` }}>
+                            <div key={ac._id} className={styles.card} style={{ transform: `translate(-${slideIndex * 100}%)` }}>
                                 <div className={`${styles.content} ${scaleClass}`}>
-                                    <Image className={styles.flag} src={ac?.country} alt={ac?.country} />
+                                    <Image className={styles.flag} src={ac?.country} alt='Experiencia' />
                                     <div className={styles.info}>
                                         <div className={styles.top}>
                                             <p className={styles.title}>
@@ -137,11 +145,11 @@ const SliderEx = () => {
                                             </p>
                                         </div>
                                         <div className={styles.bottom}>
-                                            <span className={styles.stars} key={index}><StarIcon color='inherit' fontSize='inherit'/></span>
-                                            <span className={styles.stars} key={index}><StarIcon color='inherit' fontSize='inherit'/></span>
-                                            <span className={styles.stars} key={index}><StarIcon color='inherit' fontSize='inherit'/></span>
-                                            <span className={styles.stars} key={index}><StarIcon color='inherit' fontSize='inherit'/></span>
-                                            <span className={styles.stars} key={index}><StarIcon color='inherit' fontSize='inherit'/></span>
+                                            <span className={styles.stars}><StarIcon color='inherit' fontSize='inherit'/></span>
+                                            <span className={styles.stars}><StarIcon color='inherit' fontSize='inherit'/></span>
+                                            <span className={styles.stars}><StarIcon color='inherit' fontSize='inherit'/></span>
+                                            <span className={styles.stars}><StarIcon color='inherit' fontSize='inherit'/></span>
+                                            <span className={styles.stars}><StarIcon color='inherit' fontSize='inherit'/></span>
                                         </div>
                                     </div>
                                 </div>
@@ -149,11 +157,19 @@ const SliderEx = () => {
                         )
                     })}
                 </div>
-                {slideIndex < length - 1 && (
-                    <div className={`${styles.arrow} ${styles.right}`} onClick={() => handleClick("right")}>
-                        <KeyboardArrowRightIcon />
-                    </div>
-                )}
+                {slideIndex < length - 1 ? 
+                    (
+                        <div className={`${styles.arrow} ${styles.right}`} onClick={() => handleClick("right")}>
+                            <KeyboardArrowRightIcon />
+                        </div>
+                    )
+                    :
+                    (
+                        <div className={`${styles.arrow} ${styles.right} ${styles.opacity}`}>
+                            <KeyboardArrowRightIcon />
+                        </div>
+                    )
+                }
             </div>
         </div>
     );
