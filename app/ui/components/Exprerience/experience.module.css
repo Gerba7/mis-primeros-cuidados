@@ -25,7 +25,7 @@
     align-items: center;
     justify-content: center;
     gap: 2vh;
-    padding: 0 15vw 0 15vw;
+    padding: 0 10.5vw 0 10.5vw;
     position: relative;
 }
 
@@ -66,6 +66,9 @@
         font-size: var(--superTitleMobile);
     }
     
+    .wrapper {
+        padding: 0 12.5vw 0 12.5vw;
+    }
 
 }
 

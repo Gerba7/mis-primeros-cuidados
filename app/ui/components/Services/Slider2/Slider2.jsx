@@ -28,7 +28,7 @@ const Slider2 = () => {
         },
         { 
             _id: 2, 
-            name: 'Expertos en cuidado del recién nacido brindan apoyo integral a las familias con asesoramiento y habilidades especializadas.', 
+            name: 'Las nurses son pilares fundamentales en el cuidado del recién nacido y el apoyo a las familias durante los primeros días de vida del bebé. Su dedicación, experiencia y conocimientos especializados en el área del cuidado infantil contribuyen significativamente a la salud y el bienestar tanto del bebé como de sus padres, aportando asesoramiento y orientación a las familias en una variedad de temas relacionados con la crianza y el desarrollo infantil.', 
             src: Servicio3 
             
         },
