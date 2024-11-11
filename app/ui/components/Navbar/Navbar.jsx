@@ -32,6 +32,20 @@ const Navbar = () => {
     };
   }, [pathname, handleScroll]);
 
+  // useEffect(() => {
+  //   if (!displayMenu) return;
+  
+  //   const handleScroll = () => {
+  //     setDisplayMenu(false);
+  //   };
+  
+  //   window.addEventListener('scroll', handleScroll);
+    
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, [displayMenu]);
+
   useEffect(() => {
     setDisplayMenu(true);
   }, [pathname]);
@@ -75,12 +89,12 @@ const Navbar = () => {
         </div>
         <div className={`${styles.right} ${displayMenu ? styles.rightDisplay : ''}`}>
           <div className={`${displayMenu ? '' : styles.rightLinks}`}>
-            <Link href='#quienes-somos' className={`${styles.link} ${navHeight ? styles.linkColor : ''}`}>QUIÉNES SOMOS</Link>
-            <Link href='#servicios' className={`${styles.link} ${navHeight ? styles.linkColor : ''}`}>SERVICIOS</Link>
-            <Link href='#experiencia' className={`${styles.link} ${navHeight ? styles.linkColor : ''}`}>EXPERIENCIA</Link>
-            <Link href='#contacto' className={`${styles.link}  ${navHeight ? styles.linkColor : ''}`}>CONTACTO</Link>
+            <Link href='#quienes-somos' onClick={() => setDisplayMenu(true)} className={`${styles.link} ${navHeight ? styles.linkColor : ''}`}>QUIÉNES SOMOS</Link>
+            <Link href='#servicios' onClick={() => setDisplayMenu(true)} className={`${styles.link} ${navHeight ? styles.linkColor : ''}`}>SERVICIOS</Link>
+            <Link href='#experiencia' onClick={() => setDisplayMenu(true)} className={`${styles.link} ${navHeight ? styles.linkColor : ''}`}>EXPERIENCIA</Link>
+            <Link href='#contacto' onClick={() => setDisplayMenu(true)} className={`${styles.link}  ${navHeight ? styles.linkColor : ''}`}>CONTACTO</Link>
           </div>
-          <div className={`${styles.linkButtonContainer}`}>
+          <div className={`${styles.linkButtonContainer}`}  onClick={() => setDisplayMenu(true)}>
             <a href='https://docs.google.com/forms/d/e/1FAIpQLSczLIuxRP4AH-LnMH1TGilUNqkI1OjrQBg7RMlSkoWgHMw_PQ/viewform' rel="noopener noreferrer" target="_blank" className={`${styles.link} ${styles.linkButton} ${navHeight ? styles.linkColor : ''}`}>POSTULATE</a>
           </div>
         </div>
