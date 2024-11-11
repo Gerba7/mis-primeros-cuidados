@@ -278,7 +278,7 @@
     font-size: var(--topTitle);
     font-weight: normal;
     overflow: hidden;
-    text-align: justify;
+    text-align: center;
     display: -webkit-box; /* Para que funcione en varios navegadores */
     -webkit-box-orient: vertical;
 }

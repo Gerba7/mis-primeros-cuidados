@@ -29,7 +29,7 @@ const SliderEx = () => {
             _id: 1, 
             name: 'Julia Yukalacheva', 
             country: Rus,
-            description: '«¡el trabajo se hizo de maravilla! Estoy muy, muy feliz. Gabriela eres genial! Definitivamente te lo advertiré, te aprecio mucho como persona y profesional.»'
+            description: '«¡El trabajo se hizo de maravilla! Estoy muy, muy feliz. Gabriela eres genial! Definitivamente te lo advertiré, te aprecio mucho como persona y profesional.»'
         },
         { 
             _id: 2, 

@@ -210,7 +210,7 @@
     font-size: var(--topTitle);
     font-weight: normal;
     overflow: hidden;
-    text-align: justify;
+    text-align: left;
     overflow: hidden; /* Oculta el contenido que excede el contenedor */
     text-overflow: ellipsis; /* Muestra '...' si el texto es demasiado largo */
     display: -webkit-box; /* Para que funcione en varios navegadores */

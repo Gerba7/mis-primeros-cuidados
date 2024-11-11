@@ -62,6 +62,7 @@
     background-color: var(--bgWhite);
     border-radius: 5vh;
     box-shadow: 3px 5px 15px -3px rgba(151, 119, 80, 0.2);
+    z-index: 5;
 }
 
 .leftContent {
@@ -97,7 +98,7 @@
 
 .right {
     flex: 1;
-    width: 50%;
+    width: 60%;
     position: absolute;
     right: -4%;
 }
