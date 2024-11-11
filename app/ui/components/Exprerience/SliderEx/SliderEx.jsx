@@ -13,6 +13,7 @@ import Arg from '../../../../../public/images/arg.png';
 import Ind from '../../../../../public/images/ind.png';
 import Ned from '../../../../../public/images/ned.png';
 import Pol from '../../../../../public/images/pol.png';
+import BasicModal2 from '../Modal2/Modal2';
 
 
 const SliderEx = () => {
@@ -69,6 +70,8 @@ const SliderEx = () => {
     ];
 
     const [slideIndex, setSlideIndex] = useState(0);
+
+
     const length = data.length - 2;
 
     
@@ -143,6 +146,7 @@ const SliderEx = () => {
                                             <p className={styles.description}>
                                                 {ac?.description}
                                             </p>
+                                            <BasicModal2 description={ac?.description} flag={ac?.country} name={ac?.name} />
                                         </div>
                                         <div className={styles.bottom}>
                                             <span className={styles.stars}><StarIcon color='inherit' fontSize='inherit'/></span>

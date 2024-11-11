@@ -167,6 +167,10 @@
         font-size: var(--paragraphMobile);
     }
 
+    .wrapper {
+        height: 60vh;
+    }
+
 }
 
 

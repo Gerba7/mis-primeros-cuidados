@@ -1,3 +1,70 @@
+.button {
+    font-size: var(--topTitle);
+    text-decoration: underline;
+    cursor: pointer;
+    justify-self: flex-end;
+    align-self: flex-end;
+    color: var(--text);
+    font-weight: 700;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: max-content;
+    width: 30vw;
+    background-color: var(--bgWhite);
+    padding: 4vh 4vh 8vh 4vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+    font-size: var(--title2);
+    padding: 1vh;
+    cursor: pointer;
+    width: max-content;
+    z-index: 7;
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+}
+
+.background {
+    flex: 1;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    width: auto;
+    background-color: red;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-color: var(--bgWhite);
+}
+
+.description {
+    flex: 3;
+    text-align: justify;
+    font-size: var(--paragraph);
+}
+
+
+
 .container {
     display: flex;
     width: 100vw;
@@ -129,8 +196,8 @@
 
 .flag {
     position: absolute;
-    top: 1.5vh;
-    right: 1.5vh;
+    top: 2.5vh;
+    left: 3vh;
     height: 3vh;
     width: auto;
     border: .5px solid var(--text);
@@ -179,6 +246,7 @@
     padding: 8px;
     justify-content: space-between;
     padding-top: 4vh;
+    gap: 3vh;
 }
 
 .top {
@@ -211,10 +279,7 @@
     font-weight: normal;
     overflow: hidden;
     text-align: justify;
-    overflow: hidden; /* Oculta el contenido que excede el contenedor */
-    text-overflow: ellipsis; /* Muestra '...' si el texto es demasiado largo */
     display: -webkit-box; /* Para que funcione en varios navegadores */
-    -webkit-line-clamp: 5; /* Limita el texto a 3 líneas, ajusta el número según sea necesario */
     -webkit-box-orient: vertical;
 }
 
@@ -240,113 +305,42 @@
 
 .stars {
     color: #fbc02d; 
-    font-size: 16px;
+    font-size: var(--paragraph);
 }
 
 
 
 @media  (max-width: 799px) {
 
-    
-    .card {
-        min-width: 100%;
-        max-width: 100%;
+    .button {
+        font-size: var(--paragraphMobile);
     }
 
     .title {
         font-size: var(--title2Mobile);
     }
 
+    .iconContainer {
+        font-size: var(--title2Mobile);
+        padding: 1vh;
+        top: 1vh;
+        right: 1vh;
+    }
+
+    .modal {
+        height: max-content;
+        max-height: 95vh;
+        width: 90vw;
+        padding: 4vh 4vh 8vh 4vh;
+        gap: 5vh;
+    }
+
     .description {
-        font-size: var(--topTitleMobile);
+        font-size: var(--paragraphMobile);
     }
 
-    .waveUp {
-        position: absolute;
-        top: -14vh;
-        left: 0;
-        width: 100%;
+    .stars {
+        font-size: var(--paragraphMobile);
     }
-
-    .waveUp2 {
-        top: -15vh;
-        transform: rotate(1deg);
-        opacity: .8;
-    }
-    
-    .waveUp3 {
-        top: -16vh;
-        transform: rotate(2deg);
-        opacity: .2;
-    }
-
-    .waveDown {
-        position: absolute;
-        bottom: -14vh;
-        left: 0;
-        width: 100%;
-    }
-    
-    .waveDown2 {
-        bottom: -15vh;
-        left: 0;
-        transform: rotate(1deg);
-        opacity: .8;
-    }
-    
-    .waveDown3 {
-        bottom: -16vh;
-        left: 0;
-        transform: rotate(1deg);
-        opacity: .2;
-    }
-
-    .img {
-        width: 100%;
-        height: 15vh;
-        object-fit: cover;
-    }
-
-    .left {
-        left: 40%;
-        transform: translate(-50%, 50%);
-    }
-    
-    .right {
-        right: 40%;
-        transform: translate(50%, 50%);
-    }
-
-    .content2 {
-        scale: 1;
-    }
-
-    .margin1 {
-        margin-left: 0%;
-    }
-    
-    .margin2 {
-        margin-left: 0%;
-    }
-
-}
-
-
-@media (min-width: 800px) and (max-width: 999px) {
-
-    
-
-}
-
-
-@media (min-width: 1000px) and (max-width: 1199px) {
-
-    
-}
-
-
-@media (min-width: 1200px) and (max-width: 1499px) {
-
-    
 
 }

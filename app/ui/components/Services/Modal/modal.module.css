@@ -1,0 +1,91 @@
+.button {
+    font-size: var(--topTitle);
+    text-decoration: underline;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
+    color: var(--main);
+    font-weight: 700;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 75vh;
+    width: 30vw;
+    background-color: var(--bgWhite);
+    padding: 4vh 4vh 8vh 4vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+    font-size: var(--title2);
+    padding: 1vh;
+    cursor: pointer;
+    width: max-content;
+    z-index: 7;
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+}
+
+.background {
+    flex: 1;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    width: auto;
+    background-color: red;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-color: var(--bgWhite);
+}
+
+.description {
+    flex: 3;
+    text-align: justify;
+    font-size: var(--paragraph);
+}
+
+
+@media  (max-width: 799px) {
+
+    .button {
+        font-size: var(--paragraphMobile);
+    }
+
+    .iconContainer {
+        font-size: var(--title2Mobile);
+        padding: 1vh;
+        top: 1vh;
+        right: 1vh;
+    }
+
+    .modal {
+        height: 80vh;
+        width: 90vw;
+        padding: 4vh 4vh 8vh 4vh;
+        gap: 5vh;
+    }
+
+    .description {
+        font-size: var(--paragraphMobile);
+    }
+
+}

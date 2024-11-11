@@ -17,7 +17,6 @@ const Services = () => {
                 Servicios
             </h1>
             <>
-                {/* <Slider /> */}
                 <Slider2 />
             </>
         </div>

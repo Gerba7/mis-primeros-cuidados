@@ -49,3 +49,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+} 
+
